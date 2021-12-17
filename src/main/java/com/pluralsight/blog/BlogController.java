@@ -7,17 +7,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class BlogController {
+    private PostRepository postRepository;
+
+    public BlogController(PostRepository postRepository) {
+        this.postRepository = postRepository;
+    }
 
     @RequestMapping("/")
     public String listPosts(ModelMap modelMap) {
         modelMap.put("title", "Blog Post 1");
         return "home";
-    }
-
-    private PostRepository postRepository() {
-        return null;
-    }
-
-    public BlogController() {
     }
 }
