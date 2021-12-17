@@ -17,6 +17,6 @@ public class BlogController {
     private PostRepository postRepository() {
     }
 
-    public BlogController(postRepository()) {
+    public BlogController() {
     }
 }
