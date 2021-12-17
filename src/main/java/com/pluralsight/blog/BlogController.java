@@ -15,6 +15,7 @@ public class BlogController {
     }
 
     private PostRepository postRepository() {
+        return null;
     }
 
     public BlogController() {
