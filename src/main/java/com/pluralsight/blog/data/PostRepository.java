@@ -20,10 +20,9 @@ public class PostRepository {
         for (Post post : ALL_POSTS) {
             if (post.getId() == id) {
                 return post;
-            } else {
-                return null;
             }
         }
+        return null;
     }
 
     private final List<Post> ALL_POSTS = new ArrayList<>(Arrays.asList(
